@@ -2,7 +2,7 @@ import telegram
 from telegram.ext import Updater, MessageHandler, Filters
 
 # Список разрешенных продуктов
-ALLOWED_PRODUCTS = {
+ALLOWED_PRODUCTS = [
     'овощи': [
         'брокколи', 'цветная капуста', 'шпинат', 'морковь', 'бобы',
         'горох', 'брюссельская капуста', 'редис', 'лук', 'чеснок',
@@ -38,7 +38,7 @@ ALLOWED_PRODUCTS = {
 
 ]
 
-}
+]
 Функция для проверки, можно ли употреблять продукт
 
 def is_allowed_food(food):
